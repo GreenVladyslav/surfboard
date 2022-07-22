@@ -1,0 +1,79 @@
+.buy {
+    // background-color: #F5F5F5;
+    padding: 150px 0;
+    &__inner {
+        display: flex;
+        // gap: 97px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        width: 510px;
+        position: relative;
+    }
+    &__title {
+        margin-bottom: 50px;
+        font-family: 'Comfortaa', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 67px;
+        color: $dark-green;
+        text-transform: uppercase;
+    }
+    &__list {
+        margin-bottom: 50px;
+    }
+    &__item {
+        margin-bottom: 25px;
+        &-title {
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: $black;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            &-mb {
+                margin-bottom: 10px;
+            }
+        }
+        &:hover &-title {
+            color: $dark-green;
+        }
+        &-text {
+            width: 292px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $black;
+        }
+    }
+    &__price {
+        background: url('../img/Star.svg') center center/cover no-repeat;
+        position: absolute;
+        bottom: 130px;
+        right: 0;
+        width: 201px;
+        height: 199px;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .7s;
+        &:hover {
+            animation-name: scalePrice;
+            animation-duration: 1500ms;
+            animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            // animation-fill-mode: backwards;
+            // transition: all 0.3s;
+            
+        }
+    }
+}
+

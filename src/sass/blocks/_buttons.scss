@@ -3,7 +3,7 @@
     border: none;
     text-align: center;
     cursor: pointer;
-    transition: color 0.7s ease;
+    transition: all 0.7s ease;
     span {
         display: block;
         font-weight: 400;
@@ -21,5 +21,29 @@
     &:hover path{
         fill: $dark-yellow;
         color: $dark-yellow;
+    }
+}
+
+.btn__buy {
+    padding: 18px;
+    max-width: 484px;
+    width: 100%;
+    height: 80px;
+    border: 2px solid $dark-green;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 45px;
+    color: $dark-green;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.7s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: $dark-yellow;
+        color: $black;
+        border-color: $dark-yellow;
     }
 }
