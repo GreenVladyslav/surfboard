@@ -1,0 +1,44 @@
+@import 'base/variables';
+@import 'base/mixins';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    // font-family: 'Comfortaa', sans-serif;
+    color: $black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.page {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@import 'blocks/header';
+@import 'blocks/info';
+@import 'blocks/buttons';

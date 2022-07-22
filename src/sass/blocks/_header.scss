@@ -1,0 +1,129 @@
+.header {
+    background: url('../img/bg/header__bg.jpg') center center/cover no-repeat;
+    min-height: 100vh;
+    // min-height: 860px;
+    position: relative;
+    &__top {
+        // padding-top: 57px;
+        padding: 57px 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 100px;
+        font-family: 'Comfortaa', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    &__logo path {
+        transition: fill .3s ease;
+    }
+    &__logo{
+        &:hover path{
+            fill: $dark-green;
+        }
+    }
+    &__btn {
+        padding: 12px 71px;
+        color: $white;
+        text-transform: uppercase;
+        width: 193px;
+        // height: 43px;
+        background-color: $black;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: color .3s ease;
+        transition: background-color .3s ease;
+        &:hover {
+            background-color: $dark-yellow;
+            color: $black;
+        }
+    }
+    &__content {
+        // padding-bottom: 107px;
+        min-height: calc(100vh - 161px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative; 
+        &-box {
+            max-width: 550px;
+            margin-right: 30px;
+            text-align: center;
+            font-family: 'Comfortaa', sans-serif;
+            font-weight: 700;
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 64px;
+        line-height: 71px;
+    }
+    &__text {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 27px;
+    }
+    &__decor-text {
+        position: absolute;
+        bottom: 25px;
+        color: $dark-green;
+        text-transform: uppercase;
+        z-index: 4;
+        &-one, &-two {
+            font-family: 'Comfortaa', sans-serif;
+            font-weight: 400;
+            font-size: 130px;
+            line-height: 145px;
+            opacity: 0.3;
+        }
+        &-one {
+            z-index: 1;
+            right: 145px;
+            bottom: 120px;
+        }
+        &-two {
+            bottom: 0;
+            left: 265px;
+            z-index: 4;
+        }
+        &-three {
+            max-width: 360px;
+            right: 145px;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 39px;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+
+}
+
+// Елки
+header::before {
+    content: "";
+    position: absolute;
+    background: url("../img/header__decor.svg") center center/cover no-repeat;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 456px;
+    transform: translateY(35%);
+    z-index: 2;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    background: url("../img/header__decor.svg") center center/cover no-repeat;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 456px;
+    transform: translateY(65%) rotate(180deg);
+    z-index: 3;
+}

@@ -1,0 +1,25 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.7s ease;
+    span {
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+        padding-top: 12px;
+    }
+}
+
+.btn-info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &:hover path{
+        fill: $dark-yellow;
+        color: $dark-yellow;
+    }
+}
