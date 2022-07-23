@@ -1,6 +1,6 @@
 .buy {
     // background-color: #F5F5F5;
-    padding: 150px 0;
+    padding: 150px 0 0;
     &__inner {
         display: flex;
         // gap: 97px;
@@ -13,12 +13,7 @@
     }
     &__title {
         margin-bottom: 50px;
-        font-family: 'Comfortaa', sans-serif;
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 67px;
         color: $dark-green;
-        text-transform: uppercase;
     }
     &__list {
         margin-bottom: 50px;
@@ -64,15 +59,12 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        transition: all .7s;
+        animation: scalePriceX 1500ms;
         &:hover {
             animation-name: scalePrice;
             animation-duration: 1500ms;
             animation-timing-function: ease;
-            // animation-iteration-count: infinite;
-            // animation-fill-mode: backwards;
-            // transition: all 0.3s;
-            
+            animation-fill-mode: both;
         }
     }
 }

@@ -29,10 +29,10 @@ ul {
     list-style-type: none;
 }
 
-.page {
-    max-width: 1920px;
-    margin: 0 auto;
-}
+// .page {
+//     max-width: 1920px;
+//     margin: 0 auto;
+// }
 
 .container {
     max-width: 1230px;
@@ -40,7 +40,20 @@ ul {
     padding: 0 15px;
 }
 
+.title {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 67px;
+    text-transform: uppercase;
+}
+
+img {
+    object-fit: cover;
+}
+
 @import 'blocks/header';
 @import 'blocks/info';
 @import 'blocks/buttons';
 @import 'blocks/buy';
+@import 'blocks/technology';

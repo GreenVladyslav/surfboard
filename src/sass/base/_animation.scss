@@ -6,3 +6,12 @@
         transform: scale(1.4);
     }
 }
+
+@keyframes scalePriceX{
+    from {
+        transform: scale(1.4);
+    }
+    to {
+        transform: scale(1);
+    }
+}
