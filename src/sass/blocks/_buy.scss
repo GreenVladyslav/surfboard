@@ -3,9 +3,9 @@
     padding: 150px 0 0;
     &__inner {
         display: flex;
-        // gap: 97px;
         justify-content: space-between;
         align-items: center;
+        // gap: 103px;
     }
     &__content {
         width: 510px;
@@ -59,12 +59,9 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        animation: scalePriceX 1500ms;
+        transition: transform 0.3s;
         &:hover {
-            animation-name: scalePrice;
-            animation-duration: 1500ms;
-            animation-timing-function: ease;
-            animation-fill-mode: both;
+            transform: scale(1.3);
         }
     }
 }

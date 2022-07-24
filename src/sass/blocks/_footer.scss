@@ -1,0 +1,86 @@
+.footer {
+    background-color: $black;
+    // padding: 100px 0 82px;
+    &__inner {
+        padding: 100px 0 82px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 97px;
+    }
+    &__logo {
+        // height: 100%;
+        align-self: flex-start;
+    }
+    &__logo path {
+        transition: fill .3s ease;
+    }
+    &__logo{
+        &:hover path{
+            fill: $dark-green;
+        }
+    }
+    &__title {
+        color: $white;
+        margin-bottom: 27px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        &-input {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            font-size: 22px;
+            // height: 50px;
+            color: $white;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            outline: none;
+            margin-bottom: 57px;
+            &::placeholder {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+                color: rgba(255, 255, 255, 0.4);
+                text-transform: uppercase;
+            }
+        }
+    }
+    &__social-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }
+    &__gallery {
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        display: grid;
+        gap: 52px;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 50px;
+    }
+    &__menu-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__menu-item {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white;
+        text-transform: uppercase;
+        transition: color 0.6 ease;
+        &:hover {
+            color: $dark-green;
+        }
+    }
+}

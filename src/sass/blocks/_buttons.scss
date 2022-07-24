@@ -4,7 +4,7 @@
     border: none;
     text-align: center;
     cursor: pointer;
-    transition: all 0.7s ease;
+    transition: all 0.3s ease;
     span {
         display: block;
         font-weight: 400;
@@ -12,23 +12,47 @@
         line-height: 22px;
         color: $white;
         padding-top: 12px;
+        transition: all 0.3s ease;
+    }
+    // &:hover span, &:hover path {
+    //     transition: all 0.3s ease;
+    // }
+    &:hover span{
+        color: $dark-green;
+    }
+    &:hover path{
+        fill: $dark-yellow;
+    }
+    &:hover circle {
+        stroke: $dark-yellow;
     }
     &-info {
         bottom: 0;
         right: 0;
+
     }
     &-technology {
         // top: 652px;
         top: 50vh;
         right: 350px;
     }
-    &:hover path{
-        fill: $dark-yellow;
-        // color: $dark-yellow;
-        // background-color: $dark-yellow;
-        // border-color: $dark-yellow;
-        // stroke: $dark-yellow;
-        // viewBox: $dark-yellow;
+}
+
+.header__btn {
+    padding: 12px 71px;
+    color: $white;
+    text-transform: uppercase;
+    width: 193px;
+    // height: 43px;
+    background-color: $black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color .3s ease;
+    transition: background-color .3s ease;
+    &:hover {
+        background-color: $dark-yellow;
+        color: $black;
     }
 }
 
@@ -56,18 +80,21 @@
     }
 }
 
-
-// .btn-technology {
-//     // top: 652px;
-//     top: 50vh;
-//     right: 350px;
-// }
-
-// .btn-info {
-//     bottom: 0;
-//     right: 0;
-//     &:hover path{
-//         fill: $dark-yellow;
-//         color: $dark-yellow;
-//     }
-// }
+.btn-footer {
+    width: 193px;
+    // height: 42.46px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    padding: 10px 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+        &:hover {
+            color: $dark-green;
+            border: 2px solid $dark-green;
+        }
+}

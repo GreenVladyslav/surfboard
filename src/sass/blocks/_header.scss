@@ -23,23 +23,6 @@
             fill: $dark-green;
         }
     }
-    &__btn {
-        padding: 12px 71px;
-        color: $white;
-        text-transform: uppercase;
-        width: 193px;
-        // height: 43px;
-        background-color: $black;
-        border: none;
-        border-radius: 2px;
-        cursor: pointer;
-        transition: color .3s ease;
-        transition: background-color .3s ease;
-        &:hover {
-            background-color: $dark-yellow;
-            color: $black;
-        }
-    }
     &__content {
         // padding-bottom: 107px;
         min-height: calc(100vh - 161px);
